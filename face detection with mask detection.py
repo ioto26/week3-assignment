@@ -188,7 +188,7 @@ class ImageQualityCheckerApp:
             
             image_area = width * height
             face_area = w * h
-            if face_area / image_area < 0.1:
+            if face_area / image_area < 0.05:
                  feedback.append(f"顔が画像全体に対して小さすぎます。もっと顔を大きく写してください。")
 
             if is_smiling:
